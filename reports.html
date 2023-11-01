@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dt Monster Leads</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+  <link rel="stylesheet" href="assets/css/monster.css" />
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="index.html" class="text-nowrap logo-img">
+            <img src="assets/images/logos/logo.png" width="250" alt="" class=""/>
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="sidebar-item firts">
+              <a class="sidebar-link" href="index.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-user"></i>
+                </span>
+                <span class="hide-menu">Accounts</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="project.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-bullhorn"></i>
+                </span>
+                <span class="hide-menu">Campaigns</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="leads.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-filter"></i>
+                </span>
+                <span class="hide-menu">Leads</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="reports.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-line-chart"></i>
+                </span>
+                <span class="hide-menu">Reports</span>
+              </a>
+            </li>
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="messages.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-message"></i>
+                </span>
+                <span class="hide-menu">Messages</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="integrations.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-link"></i>
+                </span>
+                <span class="hide-menu">Integrations</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="settings.html" aria-expanded="false">
+                <span>
+                  <i class="fa fa-cog"></i>
+                </span>
+                <span class="hide-menu">Settings</span>
+              </a>
+            </li>
+            
+          </ul>
+
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover das" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  
+                  <img src="assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle msi">
+                  Invitado
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item" data-bs-toggle="modal" data-bs-target="#global-modal">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item" data-bs-toggle="modal" data-bs-target="#global-modal">
+                      <i class="ti ti-mail fs-6"></i>
+                      <p class="mb-0 fs-3">My Account</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item" data-bs-toggle="modal" data-bs-target="#global-modal">
+                      <i class="ti ti-list-check fs-6"></i>
+                      <p class="mb-0 fs-3">My Task</p>
+                    </a>
+                    <a href="index.html" class="btn btn-outline-primary mx-3 mt-2 d-block" >Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <!-- ---------------------start Custom Modal---------------- -->
+      <div class="button-group" bis_skin_checked="1">
+        <div id="global-modal" class="modal fade" tabindex="-1" aria-hidden="true" bis_skin_checked="1">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg" bis_skin_checked="1">
+            <div class="modal-content" bis_skin_checked="1">
+              <div class="modal-body" bis_skin_checked="1">
+                <div class="text-center mt-2 mb-4" bis_skin_checked="1">
+                  <img src="assets/images/logos/mail.jpg" alt="" class="imagenlog" width="180">
+                  <h2 class="tittlemodal">Register</h2>
+                  <form class="" action="#">
+                    <div class="mb-3" bis_skin_checked="1">
+                      <label for="username" class="newlabel">Name</label>
+                      <input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
+                    </div>
+                    <div class="mb-3" bis_skin_checked="1">
+                      <label for="username" class="newlabel">Email address</label>
+                      <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                    </div>
+                    <div class="mb-3" bis_skin_checked="1">
+                      <div class="form-check" bis_skin_checked="1">
+                        <input type="checkbox" class="form-check-input" id="customCheck1">
+                        <label class="form-check-label" for="customCheck1">I accept
+                          <a href="#">Terms and Conditions</a></label>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-center" bis_skin_checked="1">
+                      <button class="btn btn-light-info text-info font-medium blue" type="submit">
+                        Sign Up
+                      </button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- ---------------------end Custom Modal---------------- -->
+    <!-- ---------------------Start Modal---------------- -->
+
+      <div id="start-modal" class="modal fade" tabindex="-1" aria-hidden="true" bis_skin_checked="1">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" bis_skin_checked="1">
+          <div class="modal-content" bis_skin_checked="1">
+            <div class="modal-body" bis_skin_checked="1">
+              <div class="text-center mt-2 mb-4" bis_skin_checked="1">
+                <img src="assets/images/logos/reports.jpg" alt="" class="imagenlog" width="750"> 
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---------------------end Start Modal---------------- -->
+      <div class="container-fluid">
+        <!--  Row 1 -->
+        <div class="row">
+            <div class="col-lg-12 inicio">
+              <span class="help-header">Reports</span>
+              <br>
+              <span class="nueva">Easily track your campaigns in one place and analyse your stats
+
+              </span>  
+            </div>
+
+            <div class="col-lg-12 camps">        
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-9"></div>  
+                    <div class="col-lg-3">
+                      <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#global-modal"><span class="help-center-text-color"> Visit help center</span><i class="fa fa-external-link" aria-hidden="true"></i></a>                      </div> 
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4"><input class="form-control" placeholder="(GTM + 01:00) Central European Time"></div>  
+                    <div class="col-lg-4"><input class="form-control" placeholder="10/23/2023 -> 10/31/2023 "></div>  
+                    <div class="col-lg-4"><input class="form-control" placeholder="All Campaigns"></div>   
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Filter by Report Type</option>
+                        <option>Linkedin</option> 
+                        <option>Email</option>                    
+                        <option>Data enrichment</option>
+                       </select>
+                    </div>  
+                    <div class="col-lg-4"><button class="conec dos" data-bs-toggle="modal" data-bs-target="#global-modal">Export PDF</button><button class="conec dos" data-bs-toggle="modal" data-bs-target="#global-modal">Export CSV</button></div>  
+                    <div class="col-lg-4"></div>   
+                  </div>
+                  <br>
+                  <div class="row">
+                    <img src="assets/images/logos/report.jpg" width="250" alt="" class=""/>
+                  </div>
+                  <div class="row">
+                    <table class="table table-striped das">
+                       <thead class="headtabl">
+                      <tr class="headtable">
+                        <th class="ini">Date</th>
+                        <th>Views</th>
+                        <th>Follows</th>
+                        <th>Connections send</th>
+                        <th>Messages send</th>
+                        <th>InMails send</th>
+                      </tr>
+                      </thead>
+                      <tr class="intertable">
+                        <td><div class="form-check form-switch">2023-10-23</td>
+                        <td>29</td>
+                        <td>0</td>
+                        <td>21</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="intertable">
+                        <td><div class="form-check form-switch">2023-10-24</td>
+                        <td>30</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="intertable">
+                      <td><div class="form-check form-switch">2023-10-25</td>
+                      <td>29</td>
+                      <td>0</td>
+                      <td>46</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr class="intertable">
+                      <td><div class="form-check form-switch"><strong>Total</strong></td>
+                      <td><strong>88</strong></td>
+                      <td><strong>0</strong></td>
+                      <td><strong>79</strong></td>
+                      <td><strong>0</strong></td>
+                      <td><strong>0</strong></td>
+                    </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0 fs-4">Design and Developed by <a href="https://linkedin.dtmonsterleads.com/" target="_blank" class="pe-1 text-primary text-decoration-underline">DT Monster Leads</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script>
+    $(document).ready(function()
+    {
+       $("#start-modal").modal("show");
+    });
+  </script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sidebarmenu.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
