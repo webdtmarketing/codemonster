@@ -20,6 +20,14 @@
     data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
+      <div class="brand-logo d-flex align-items-center justify-content-between">
+        <a href="index.html" class="text-nowrap logo-img">
+          <img src="assets/images/logos/logo.png" width="230" alt="" class=""/>
+        </a>
+        <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+          <i class="ti ti-x fs-8"></i>
+        </div>
+      </div>
       <!-- Sidebar scroll-->
       <div>
         
@@ -27,14 +35,7 @@
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           
           <ul id="sidebarnav">
-            <div class="brand-logo d-flex align-items-center justify-content-between">
-              <a href="index.html" class="text-nowrap logo-img">
-                <img src="assets/images/logos/logo.png" width="250" alt="" class=""/>
-              </a>
-              <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-                <i class="ti ti-x fs-8"></i>
-              </div>
-            </div>
+
             <li class="sidebar-item firts">
               <a class="sidebar-link" href="index.html" aria-expanded="false">
                 <span>
@@ -182,7 +183,7 @@
               <button type="button" class="btn btn-default btn-circle white" data-bs-toggle="modal" data-bs-target="#global-modal">3
               </button><span class="info camp"> Campaign steps</span>
           </div>
-            </div>  
+          </div>  
 
           </div>
           <div class="col-lg-2">
@@ -335,7 +336,7 @@
               <div class="col-lg-6 type firts">
               </div>
               <div class="col-lg-6 type firts">
-               <button class="conec">1st connections</button><button class="conec">2nd connections</button><button class="conec">3rd connections</button>
+               <a class="conec" href="manage-campaigns.html">1st connections</a><a class="conec" href="manage-campaigns.html">2nd connections</a><a class="conec" href="manage-campaigns.html">3rd connections</a>
               </div>
             </div>
           </div>
