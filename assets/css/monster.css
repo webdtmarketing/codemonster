@@ -622,3 +622,45 @@ a.sidebar-link.active {
     height: calc(100vh - 80px);
     border-radius: 7px;
 }
+@media only screen and (max-width: 600px) {
+    .row.tabs {
+        display: none;
+    }
+}
+button.cuatro {
+    margin: 30px 15px 10px 0px;
+    color: #303030;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+a.tres {
+    margin: 20px 15px 10px 0px;
+    color: #ffffff;
+    border-radius: 11px;
+    padding: 10px;
+    background: #0756f2;
+    border: 1px solid #ffffff;
+}
+a.btn.sis {
+    margin-bottom: 20px;
+}
+.row.desp {
+    margin-top: 30px;
+}
+div#interg {
+    margin: 100px  !important;
+}
+a.btn.btn-light-info.text-info.font-medium.red {
+    background-color: #0756f2;
+    color: white !important;
+    margin-top: 15px;
+}
+a.conec {
+    margin: 0px 15px 10px 0px;
+    color: #0756f2;
+    border-radius: 50px;
+    padding: 5px;
+    background: #539bff;
+    border: 1px solid #5d87ff;
+}
