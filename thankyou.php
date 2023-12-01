@@ -1,3 +1,23 @@
+<?PHP 
+    error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_WARNING & ~E_NOTICE);
+    date_default_timezone_set("America/Caracas");
+
+    $boton = $_POST["boton"];
+    
+    $nombre = $_POST["nombre"];
+    $telefono = $_POST["telefono"];
+    $correo = $_POST["correo"];
+
+    if($boton=="Registrarse")
+
+    {
+      echo "<script>window.location='email.php?nombre=$nombre&telefono=$telefono&correo=$correo'</script>";
+    }
+    else
+    {
+
+    }
+?> 
 <!doctype html>
 <html lang="en">
 
@@ -21,7 +41,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="index.html" class="text-nowrap logo-img">
+          <a href="index.php" class="text-nowrap logo-img">
             <img src="assets/images/logos/logo.png" width="230" alt="" class=""/>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -29,10 +49,12 @@
           </div>
         </div>
         <!-- Sidebar navigation-->
-        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                 <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          
           <ul id="sidebarnav">
+
             <li class="sidebar-item firts">
-              <a class="sidebar-link" href="index.html" aria-expanded="false">
+              <a class="sidebar-link" href="index.php" aria-expanded="false">
                 <span>
                   <i class="fa fa-user"></i>
                 </span>
@@ -40,7 +62,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="project.html" aria-expanded="false">
+              <a class="sidebar-link" href="project.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fas fa-bullhorn"></i>
                 </span>
@@ -48,7 +70,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="leads.html" aria-expanded="false">
+              <a class="sidebar-link" href="leads.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fa fa-filter"></i>
                 </span>
@@ -56,7 +78,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="reports.html" aria-expanded="false">
+              <a class="sidebar-link" href="reports.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fa fa-line-chart"></i>
                 </span>
@@ -65,7 +87,7 @@
             </li>
             
             <li class="sidebar-item">
-              <a class="sidebar-link" href="messages.html" aria-expanded="false">
+              <a class="sidebar-link" href="messages.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fa fa-message"></i>
                 </span>
@@ -73,7 +95,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="integrations.html" aria-expanded="false">
+              <a class="sidebar-link" href="integrations.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fa fa-link"></i>
                 </span>
@@ -81,14 +103,21 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="settings.html" aria-expanded="false">
+              <a class="sidebar-link" href="settings.php#openModal" aria-expanded="false">
                 <span>
                   <i class="fa fa-cog"></i>
                 </span>
                 <span class="hide-menu">Settings</span>
               </a>
             </li>
-            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="https://home.dtmonsterleads.com/" aria-expanded="false">
+                <span>
+                  <i class="fa fa-sign-out test"></i>
+                </span>
+                <span class="hide-menu">Logout</span>
+              </a>
+            </li>
           </ul>
 
         </nav>
@@ -133,7 +162,7 @@
                       <i class="ti ti-list-check fs-6"></i>
                       <p class="mb-0 fs-3">My Task</p>
                     </a>
-                    <a href="index.html" class="btn btn-outline-primary mx-3 mt-2 d-block" >Logout</a>
+                    <a href="https://home.dtmonsterleads.com/" class="btn btn-outline-primary mx-3 mt-2 d-block" >Logout</a>
                   </div>
                 </div>
               </li>
@@ -150,29 +179,25 @@
               <div class="modal-body" bis_skin_checked="1">
                 <div class="text-center mt-2 mb-4" bis_skin_checked="1">
                   <img src="assets/images/logos/mail.jpg" alt="" class="imagenlog" width="180">
-                  <h2 class="tittlemodal">Register</h2>
-                  <form class="" action="#">
-                    <div class="mb-3" bis_skin_checked="1">
-                      <label for="username" class="newlabel">Name</label>
-                      <input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
-                    </div>
-                    <div class="mb-3" bis_skin_checked="1">
-                      <label for="username" class="newlabel">Email address</label>
-                      <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
-                    </div>
-                    <div class="mb-3" bis_skin_checked="1">
-                      <div class="form-check" bis_skin_checked="1">
-                        <input type="checkbox" class="form-check-input" id="customCheck1">
-                        <label class="form-check-label" for="customCheck1">I accept
-                          <a href="#">Terms and Conditions</a></label>
-                      </div>
-                    </div>
-                    <div class="mb-3 text-center" bis_skin_checked="1">
-                      <button class="btn btn-light-info text-info font-medium blue" type="submit">
-                        Sign Up
-                      </button>
-                    </div>
-                  </form>
+                  <h2 class="tittlemodal">Regístrate</h2>
+
+                        <form class="" action="" method="post">
+                          <div class="mb-3" bis_skin_checked="1">
+                            <label for="username" class="newlabel">Nombre</label>
+                            <input class="form-control" type="text" name="nombre" id="username" required="" placeholder="Michael Zenaty">
+                          </div>
+                          <div class="mb-3" bis_skin_checked="1">
+                            <label for="username" class="newlabel">Dirección de Email</label>
+                            <input class="form-control" type="email" name="correo" id="emailaddress" required="" placeholder="john@deo.com">
+                          </div>
+                          <div class="mb-3" bis_skin_checked="1">
+                            <label for="username" class="newlabel">Numero Telefónico</label>
+                            <input class="form-control" type="text" name="telefono" id="telefono" required="" placeholder="0000-0000000">
+                          </div>
+                          <div class="mb-3 text-center" bis_skin_checked="1">
+                            <input type="submit" value="Registrarse" name="boton" class="btn btn-light-info text-info font-medium blue"> 
+                          </div>
+                        </form>
               </div>
             </div>
           </div>
@@ -180,14 +205,14 @@
       </div>
       </div>
     <!-- ---------------------end Custom Modal---------------- -->
-      <!-- ---------------------Start Modal---------------- -->
+    <!-- ---------------------Start Modal---------------- -->
 
       <div id="start-modal" class="modal fade" tabindex="-1" aria-hidden="true" bis_skin_checked="1">
         <div class="modal-dialog modal-dialog-scrollable modal-lg" bis_skin_checked="1">
           <div class="modal-content" bis_skin_checked="1">
             <div class="modal-body" bis_skin_checked="1">
               <div class="text-center mt-2 mb-4" bis_skin_checked="1">
-                <img src="assets/images/logos/leads.jpg" alt="" class="imagenlog" width="750"> 
+                <img src="assets/images/logos/reports.jpg" alt="" class="imagenlog" width="750"> 
                
             </div>
           </div>
@@ -197,113 +222,27 @@
 <!-- ---------------------end Start Modal---------------- -->
       <div class="container-fluid">
         <!--  Row 1 -->
-        <div class="row cami">
-          <div class="col-lg-4 inicio">
-            <div class="btn-group dropup">
-              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#global-modal">
-                All campaigns
-              </button>
-              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu">
-                <li>Firts Campaign</li>
-                <li>Second Campaign</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 inicio">
-          
-          </div>
-          <div class="col-lg-5 inicio">
-            <button class="conec dos" data-bs-toggle="modal" data-bs-target="#global-modal"><i class="fa fa-external-link tris"></i> Export data from all campaigns</button><br>
-            <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#global-modal"><span class="help-center-text-color"> Visit help center</span><i class="fa fa-external-link" aria-hidden="true"></i></a>  
-            </div>
-        </div> 
-
-        <div class="row tabs">
-          <div class="col-lg-1">
-            <span class="hleadstex only"> Leads</span>
-          </div>
-          <div class="col-lg-1">
-            <span class="hleadstex gray"> Steps</span>
-          </div>
-          <div class="col-lg-1">
-            <span class="hleadstex blue"> Stats</span>
-          </div>
-          <div class="col-lg-3">
-            <span class="hleadstex gray"> Campaign integration</span>
-          </div>
-        </div> 
-        <div class="row tabs">
-          <div class="col-lg-4">
-            <form>
-              <div class="input-group mt-4">
-                <input class="form-control" placeholder="Search seats here...">
-                <span class="input-group-append bg-white">
-                   <i class="fa fa-search"></i>
-                </span>
-            </div>
-            </form>
-          </div>
-          <div class="col-lg-2"> 
-            <i class="fa fa-filter new"></i>
-            <span class="total"> Totalleads:</span>
-            <span class="valor">4658</span>
-          </div>
-          <div class="col-lg-2">
-            <button class="conec dos" data-bs-toggle="modal" data-bs-target="#global-modal">Export leads</button><br>
-          </div>
-          <div class="col-lg-2">
-            <button class="conec dos" data-bs-toggle="modal" data-bs-target="#global-modal">Add new leads</button><br>
-          </div>
-          <div class="col-lg-2">
-            <span class="hleadstex show"> Show</span>
-            <select class="form-select">
-              <option>20</option>
-              <option>50</option>
-              <option>100</option>
-            </select>
-          </div>
-        </div> 
         <div class="row">
-          <table class="table das">
-               <thead class="headtabl">
-              <tr class="headtable">
-                <th class="ini"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                <th class="ini">Active</th>
-                <th>Contact</th>
-                <th>Title/Company</th>
-                <th>Status</th>
-                <th>Current step</th>
-                <th>Next step</th>
-            </tr>
-          </thead>
-            <tr class="intertable">
-              <td class="ini"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-              <td><div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                <label class="form-check-label" for="flexSwitchCheckChecked"></label></div></td>
-              <td>Maria Garces</td>
-              <td>Empresa de Marketing</td>
-              <td><button class="btn newgray">Discovered</button></td>
-              <td>1</td>
-              <td>connect</td>
-          </tr>
-          <tr class="intertable">
-            <td class="ini"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-              <label class="form-check-label" for="flexSwitchCheckChecked"></label></div></td>
-            <td>Richard Araujo</td>
-            <td>Empresa de Marketing</td>
-            <td><button class="btn newyellow">Connection pending</button></td>
-            <td>1</td>
-            <td>connect</td>
-        </tr>
-          </table>
-          </div>
+            <div class="col-lg-12 inicio">
+              <span class="help-header">Gracias por Registrarse </span>
+              <br>
+              <span class="nueva">Nos pondremos en contacto pronto con usted
+              </span>  
+            </div>
 
+            <div class="col-lg-12 camps">        
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <center>
+                   <img src="assets/images/logos/thank.jpg" alt="" width="400" class="imahes">    
+                   <a href="https://home.dtmonsterleads.com/" class="mister "><i class="fa fa-plus-circle plus" aria-hidden="true"></i> Regresar</a>
+                   </center>            
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
         <div class="py-6 px-6 text-center">
           <p class="mb-0 fs-4">Design and Developed by <a href="https://linkedin.dtmonsterleads.com/" target="_blank" class="pe-1 text-primary text-decoration-underline">DT Monster Leads</a></p>
         </div>
@@ -311,12 +250,7 @@
     </div>
   </div>
   <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-  <script>
-    $(document).ready(function()
-    {
-       $("#start-modal").modal("show");
-    });
-  </script>
+
   <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/sidebarmenu.js"></script>
   <script src="assets/js/app.min.js"></script>
